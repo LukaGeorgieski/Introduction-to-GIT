@@ -1,0 +1,7 @@
+total 24
+drwxr-xr-x 5 s89241332 68658 4096 Oct 17 16:45 A
+drwxr-xr-x 3 s89241332 68658 4096 Oct 25 09:32 CompSci
+drwxr-xr-x 2 s89241332 68658 4096 Oct 10 16:41 Computer Practicum 
+-rw-r--r-- 1 s89241332 68658 2642 Oct 25 11:07 MiniProject1.txt
+drwxrwxr-x 2 s89241332 68658 4096 Oct 19 19:26 PuttyTest
+drwxr-xr-x 4 s89241332 68658 4096 Nov  7 16:21 Visual Studio

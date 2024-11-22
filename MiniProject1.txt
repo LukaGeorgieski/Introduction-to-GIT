@@ -1,0 +1,50 @@
+78  pwd
+   79  ls
+   80  cd Downloads/
+   81  mkdir -p project/{config_files/{raw_configs/{backups,archived_configs},processed_configs},reports/{log_reports,summary_reports}}
+   82  cat > config1.cfg
+   83  cat > config2.cfg
+   84  cat > config3.cfg
+   85  ls
+   86  rm config3.cfg 
+   87  ls
+   88  cat > config3.cfg
+   89  ls
+   90  mv config1.cfg project/config_files/raw_configs/
+   91  mv config2.cfg project/config_files/raw_configs/
+   92  mv config3.cfg project/config_files/raw_configs/
+   93  ls
+   94  ls project/config_files/raw_configs/
+   95  cp project/config_files/raw_configs/config1.cfg backups
+   96  ls project/config_files/raw_configs/backups/
+   97  cp project/config_files/raw_configs/config1.cfg backups | cp project/config_files/raw_configs/config2.cfg backups 
+   98  cp project/config_files/raw_configs/config1.cfg project/config_files/raw_configs/backups/ | cp project/config_files/raw_configs/config2.cfg project/config_files/raw_configs/backups/ 
+   99  ls project/config_files/raw_configs/backups/
+  100  mv project/config_files/raw_configs/config3.cfg project/config_files/raw_configs/archived_configs/
+  101  ls project/config_files/raw_configs/archived_configs/
+  102  ls project/config_files/raw_configs/
+  103  cat project/config_files/raw_configs/backups/config1.cfg | cat project/config_files/raw_configs/backups/config2.cfg | cat > all_configs.cfg 
+  104  ls
+  105  cat all_configs.cfg 
+  106  rm all_configs.cfg 
+  107  ls
+  108  cat project/config_files/raw_configs/backups/config1.cfg | cat > all_configs.cfg
+  109  cat project/config_files/raw_configs/backups/config2.cfg | cat >> all_configs.cfg 
+  110  ls
+  111  cat all_configs.cfg 
+  112  mv all_configs.cfg project/config_files/processed_configs/
+  113  cat project/config_files/processed_configs/all_configs.cfg | grep MAX_CONNECTIONS | wc -l | cat > max_connections_count.txt
+  114  ls
+  115  cat max_connections_count.txt 
+  116  mv max_connections_count.txt project/reports/summary_reports/
+  117  chmod project/config_files/processed_configs/all_configs.cfg 600
+  118  ls -l project/config_files/processed_configs/all_configs.cfg 
+  119* chmod project/config_files/processed_configs/u=rx,g-r,o-r
+  120  chmod project/config_files/processed_configs/ u=rx,g-r,o-r all_configs.cfg
+  121  chmod u=rx,g-r,o-r project/config_files/processed_configs/all_configs.cfg 
+  122  ls -l project/config_files/processed_configs/all_configs.cfg 
+  123  chmod 644 project/reports/summary_reports/max_connections_count.txt 
+  124  ls -l project/reports/summary_reports/max_connections_count.txt 
+  125  ls -l project/reports/summary_reports/
+  126  history
+
